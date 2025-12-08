@@ -5,7 +5,7 @@ def subArray(input,n,target):
   for i in range(n):
     if sum<target:
       sum+=input[i]
-      end+=1
+      end=i
     while sum>target:
       sum-=input[start]
       start+=1
